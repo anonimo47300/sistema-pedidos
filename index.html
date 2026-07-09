@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Papeizinhos</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f9f9f9; 
+            color: #333; 
+            margin: 0; 
+            padding: 20px; 
+            text-align: center;
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 { color: #2c3e50; margin-bottom: 10px; }
+        .descricao-geral { color: #7f8c8d; font-size: 14pt; margin-bottom: 30px; line-height: 1.6; }
+        
+        /* Grid de Produtos */
+        .produtos-grid { 
+            display: block; 
+            margin-bottom: 40px;
+        }
+        .produto-card { 
+            background: #fff; 
+            border: 1px solid #e2e8f0; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin: 15px 0;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .produto-card h3 { margin: 0 0 10px 0; color: #2c3e50; font-size: 16pt; }
+        .preco { font-size: 18pt; font-weight: bold; color: #27ae60; margin: 10px 0; }
+        
+        /* Botão de Ação */
+        .btn-pedido { 
+            display: inline-block; 
+            background-color: #2980b9; 
+            color: white; 
+            padding: 15px 40px; 
+            font-size: 14pt; 
+            font-weight: bold; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            transition: background 0.2s;
+            box-shadow: 0 4px 6px rgba(41, 128, 185, 0.2);
+        }
+        .btn-pedido:hover { background-color: #3498db; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Papeizinhos</h1>
+        <p class="descricao-geral">
+            Oferecemos quatro versões exclusivas de um mesmo produto, cada uma com conteúdo diferenciado e valores acessíveis. Cada variante mantém o mesmo formato, mas traz conteúdos únicos para atender diferentes necessidades, garantindo praticidade e variedade em um só lugar.
+        </p>
+
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <h3>Atrasado</h3>
+                <div class="preco">R$ 6,00</div>
+            </div>
+
+            <div class="produto-card">
+                <h3>Sair de sala / Matar aula</h3>
+                <div class="preco">R$ 6,00</div>
+            </div>
+
+            <div class="produto-card">
+                <h3>Ir embora</h3>
+                <div class="preco">R$ 10,00</div>
+            </div>
+
+            <div class="produto-card">
+                <h3>Pacote / Conjunto 6 papéis</h3>
+                <div class="preco">R$ 15,00</div>
+            </div>
+        </div>
+
+        <p>Pronto para fazer seu pedido? Clique abaixo para enviar as informações e aguardar nossa autorização.</p>
+        <a href="LINK_DO_SEU_FORMULARIO_AQUI" class="btn-pedido" target="_blank">Fazer Pedido & Solicitar Autorização</a>
+    </div>
+
+</body>
+</html>
