@@ -3,92 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Papeizinhos</title>
+    <title>Portal de Solicitações</title>
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f9f9f9; 
-            color: #333; 
+            background-color: #0a0a0a; 
+            color: #e0e0e0; 
             margin: 0; 
             padding: 20px; 
             text-align: center;
         }
         .container { 
-            max-width: 800px; 
-            margin: 0 auto; 
-            background: white; 
-            padding: 30px; 
+            max-width: 650px; 
+            margin: 40px auto; 
+            background: #141414; 
+            padding: 40px 30px; 
             border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #4a0000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
         }
-        h1 { color: #2c3e50; margin-bottom: 10px; }
-        .descricao-geral { color: #7f8c8d; font-size: 14pt; margin-bottom: 30px; line-height: 1.6; }
+        h1 { 
+            color: #ff3333; 
+            margin-bottom: 20px; 
+            font-size: 26pt;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .descricao-geral { 
+            color: #b0b0b0; 
+            font-size: 13pt; 
+            margin-bottom: 35px; 
+            line-height: 1.6; 
+            text-align: justify;
+        }
         
-        /* Grid de Produtos */
-        .produtos-grid { 
-            display: block; 
-            margin-bottom: 40px;
-        }
-        .produto-card { 
-            background: #fff; 
-            border: 1px solid #e2e8f0; 
-            border-radius: 8px; 
-            padding: 20px; 
-            margin: 15px 0;
-            text-align: left;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-        }
-        .produto-card h3 { margin: 0 0 10px 0; color: #2c3e50; font-size: 16pt; }
-        .preco { font-size: 18pt; font-weight: bold; color: #27ae60; margin: 10px 0; }
-        
-        /* Botão de Ação */
+        /* Botão de Ação Principal */
         .btn-pedido { 
             display: inline-block; 
-            background-color: #2980b9; 
-            color: white; 
-            padding: 15px 40px; 
-            font-size: 14pt; 
+            background-color: #800000; 
+            color: #ffffff; 
+            padding: 18px 50px; 
+            font-size: 15pt; 
             font-weight: bold; 
             text-decoration: none; 
             border-radius: 8px; 
-            transition: background 0.2s;
-            box-shadow: 0 4px 6px rgba(41, 128, 185, 0.2);
+            border: 1px solid #b30000;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(128, 0, 0, 0.4);
+            cursor: pointer;
         }
-        .btn-pedido:hover { background-color: #3498db; }
+        .btn-pedido:hover { 
+            background-color: #b30000; 
+            box-shadow: 0 6px 20px rgba(179, 0, 0, 0.6);
+            transform: translateY(-2px);
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Papeizinhos</h1>
+        
         <p class="descricao-geral">
-            Oferecemos quatro versões exclusivas de um mesmo produto, cada uma com conteúdo diferenciado e valores acessíveis. Cada variante mantém o mesmo formato, mas traz conteúdos únicos para atender diferentes necessidades, garantindo praticidade e variedade em um só lugar.
+            Oferecemos quatro versões exclusivas de um mesmo produto, cada uma com conteúdo diferenciado e valores acessíveis. Você pode escolher entre a opção Atrasado por R$6, a versão Sair de sala também por R$6, ou a alternativa Ir embora por R$10. Para quem deseja aproveitar ainda mais, disponibilizamos o Pacote com 6 por apenas R$15, reunindo todas as opções em um só conjunto. Cada variante mantém o mesmo formato, mas traz conteúdos únicos para atender diferentes necessidades, garantindo praticidade e variedade em um só lugar.
         </p>
 
-        <div class="produtos-grid">
-            <div class="produto-card">
-                <h3>Atrasado</h3>
-                <div class="preco">R$ 6,00</div>
-            </div>
-
-            <div class="produto-card">
-                <h3>Sair de sala / Matar aula</h3>
-                <div class="preco">R$ 6,00</div>
-            </div>
-
-            <div class="produto-card">
-                <h3>Ir embora</h3>
-                <div class="preco">R$ 10,00</div>
-            </div>
-
-            <div class="produto-card">
-                <h3>Pacote / Conjunto 6 papéis</h3>
-                <div class="preco">R$ 15,00</div>
-            </div>
-        </div>
-
-        <p>Pronto para fazer seu pedido? Clique abaixo para enviar as informações e aguardar nossa autorização.</p>
-        <a href="LINK_DO_SEU_FORMULARIO_AQUI" class="btn-pedido" target="_blank">Fazer Pedido & Solicitar Autorização</a>
+        <!-- Botão direcionando para o Tally -->
+        <a href="https://tally.so/r/PdyKgB" class="btn-pedido" target="_blank">Fazer Pedido</a>
     </div>
 
 </body>
